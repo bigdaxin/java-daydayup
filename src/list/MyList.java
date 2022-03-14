@@ -1,6 +1,5 @@
 package list;
 
-import com.sun.javaws.exceptions.ErrorCodeResponseException;
 
 public class MyList<E> extends AbstractList<E> {
 

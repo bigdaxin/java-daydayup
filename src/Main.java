@@ -1,7 +1,4 @@
-import list.MyArrayStack;
-import list.MyLinkList;
-import list.MyLinkStack;
-import list.MyList;
+import list.*;
 import score.Score;
 
 import java.util.ArrayList;
@@ -9,14 +6,36 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        MyLinkStack<String> myLinkStack = new MyLinkStack<>();
-        myLinkStack.push("aaa");
-        myLinkStack.push("bbb");
-        myLinkStack.push("ccc");
-        System.out.println(myLinkStack.pop());
-        System.out.println(myLinkStack.pop());
-        System.out.println(myLinkStack.pop());
 
+
+        //数组实现队列
+//        MyArrayQueue<String> myArrayQueue = new MyArrayQueue<>();
+//        myArrayQueue.push("aaa");
+//        myArrayQueue.push("bbb");
+//        myArrayQueue.push("ccc");
+//        System.out.println(myArrayQueue.pop());
+//        System.out.println(myArrayQueue.pop());
+//        System.out.println(myArrayQueue.pop());
+//        System.out.println(myArrayQueue.pop());
+//        System.out.println(myArrayQueue.pop());
+//        System.out.println(myArrayQueue.pop());
+//        System.out.println(myArrayQueue.pop());
+//        myArrayQueue.push("ddd");
+//        myArrayQueue.push("eee");
+//        myArrayQueue.push("fff");
+//        System.out.println(myArrayQueue.pop());
+//        System.out.println(myArrayQueue.pop());
+
+
+        //链表实现栈
+//        MyLinkStack<String> myLinkStack = new MyLinkStack<>();
+//        myLinkStack.push("aaa");
+//        myLinkStack.push("bbb");
+//        myLinkStack.push("ccc");
+//        System.out.println(myLinkStack.pop());
+//        System.out.println(myLinkStack.pop());
+//        System.out.println(myLinkStack.pop());
+        //数组实现栈
 //        MyArrayStack<String> myArrayStack = new MyArrayStack<>();
 //
 //        myArrayStack.push("aaa");
@@ -25,7 +44,7 @@ public class Main {
 //        System.out.println(myArrayStack.pop());
 //        System.out.println(myArrayStack.pop());
 //        System.out.println(myArrayStack.pop());
-
+        //链表实现顺序表
 //        MyLinkList<String> myLinkList = new MyLinkList<>();
 //
 //        myLinkList.add("aaa",0);
@@ -36,7 +55,7 @@ public class Main {
 //        System.out.println(myLinkList.get(2));
 //        System.out.println(myLinkList.get(1));
 //        System.out.println(myLinkList.get(0));
-
+        //数组实现顺序表
 //        MyList<E> myList = new MyList[];
 //        MyList<String> myList = new MyList<>();
 //
