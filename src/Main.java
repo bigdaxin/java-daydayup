@@ -2,30 +2,57 @@ import list.*;
 import score.Score;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.function.Consumer;
 
 public class Main {
     public static void main(String[] args) {
 
+        //树
+        TreeNode<String> myTree = new TreeNode<>("A");
 
+        myTree.lift = new TreeNode<>("B");
+        myTree.right = new TreeNode<>("C");
+        myTree.lift.lift = new TreeNode<>("D");
+        myTree.lift.right = new TreeNode<>("E");
+        myTree.right.right = new TreeNode<>("F");
+//        System.out.println(myTree);
+
+        myTree.each(myTree);
+//        LinkedList<Integer> linkedList = new LinkedList<>();
+//        linkedList.add(1);
+//        linkedList.add(1);
+//        linkedList.add(9);
+//        linkedList.add(2);
+//        linkedList.add(4);
+//        linkedList.sort(new Comparator<Integer>() {
+//            @Override
+//            public int compare(Integer o1, Integer o2) {
+//                return 0;
+//            }
+//        });
+//
+//        linkedList.sort((o1, o2) -> o2 - o1);
+//        System.out.println(linkedList);
+//
+//        linkedList.forEach(System.out::println);
 
         //数组实现队列
 //        MyArrayQueue<String> myArrayQueue = new MyArrayQueue<>();
-//        myArrayQueue.push("aaa");
-//        myArrayQueue.push("bbb");
-//        myArrayQueue.push("ccc");
-//        System.out.println(myArrayQueue.pop());
-//        System.out.println(myArrayQueue.pop());
-//        System.out.println(myArrayQueue.pop());
-//        System.out.println(myArrayQueue.pop());
-//        System.out.println(myArrayQueue.pop());
-//        System.out.println(myArrayQueue.pop());
-//        System.out.println(myArrayQueue.pop());
-//        myArrayQueue.push("ddd");
-//        myArrayQueue.push("eee");
-//        myArrayQueue.push("fff");
-//        System.out.println(myArrayQueue.pop());
-//        System.out.println(myArrayQueue.pop());
-
+//
+//        myArrayQueue.offer("aaa");
+//        myArrayQueue.offer("bbb");
+//        myArrayQueue.offer("ccc");
+//        myArrayQueue.offer("ddd");
+//        System.out.println(myArrayQueue.poll());
+//        System.out.println(myArrayQueue.poll());
+//        myArrayQueue.offer("eee");
+//        myArrayQueue.offer("fff");
+//        myArrayQueue.offer("ggg");
+//        myArrayQueue.offer("hhh");
+//        System.out.println(myArrayQueue.poll());
+//        System.out.println(myArrayQueue.poll());
 
         //链表实现栈
 //        MyLinkStack<String> myLinkStack = new MyLinkStack<>();
