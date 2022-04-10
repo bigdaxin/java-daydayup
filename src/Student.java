@@ -1,16 +1,15 @@
-package student;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
+import lombok.experimental.Accessors;
 
-@Setter
 @Getter
+@Setter
+//@Accessors(chain = true,fluent = true)
 @AllArgsConstructor
+@ToString
 public class Student {
-    Integer sid;
     String name;
-    String sex;
+
 }
-
-
